@@ -18,10 +18,10 @@ terraform {
          source  = "hashicorp/helm"
       }
    }
-
    backend "s3" {
       bucket = "johnz-remote-state"
       key    = "kubernetes-state/terraform.tfstate"
       region = "sa-east-1"
-   }
+  }
+
 }
